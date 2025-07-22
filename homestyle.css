@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "poppins";
+}
+
+main{
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+}
+
+.navbar-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.nav-link{
+    list-style-type: none;
+}
+
+.navbar-toggler{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-btn{
+    border: 2px solid  rgb(13, 214, 134);
+    background-color: rgba(0,0, 0, 0);
+    padding: 10px;
+    transition: background-color 1s ease;
+}
+
+.nav-btn:hover{
+    background-color:  rgb(13, 214, 134);
+}
+
+#hero-text h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: gold;
+    margin-bottom: 1.5rem;
+}
+
+#hero-text{
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: inline-block;
+    border: 2px solid rgb(13, 214, 134);
+    background: none;
+    font-weight: 600;
+    transition: 0.5s ease background-color;
+}
+
+.btn:hover{
+    background-color: rgb(13, 214, 134);
+}
+
+.showproduct-btn  {
+    background-color: #0AAF4F;
+}
+
+.showproduct-btn:hover {
+    background: none;
+}
+   
+.dropdown {
+      position: relative;
+      display: inline-block;
+}
+
+.dropbtn {
+      background-color: rgb(13, 214, 134);
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+}
+
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: grey;
+      min-width: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+}
+
+.dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+}
+
+.dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: black;
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
+}
+.add-to-cart{
+    color: black;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cart{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+@media (max-width:780px) {
+    #hero-text h1 {
+        font-size: 8vw ;
+    }
+    #hero-text a {
+        font-size: 2vw ;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+    padding: 2rem;
+  }
+}
